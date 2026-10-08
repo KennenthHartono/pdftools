@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>DOCUMENT // LAB · Local PDF and Word tools</title>
+    <meta name="description" content="Merge, split, rotate, compress and convert PDFs, images and Word files. Everything runs locally in your browser. No uploads, no account." />
+    <meta name="author" content="Kennenth" />
+    <meta name="color-scheme" content="light dark" />
+    <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg" />
+
+    <link rel="preload" href="assets/fonts/archivo-latin-wdth-normal.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/variables.css" />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/components.css" />
+    <link rel="stylesheet" href="css/tools.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <script type="module" src="js/app.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <div class="container header-row">
+        <a class="logo" href="#top" aria-label="DOCUMENT // LAB, home">
+          <span class="logo-line1">DOCUMENT <span class="logo-slash">//</span> LAB</span>
+          <span class="logo-line2">DIGITAL UTILITY</span>
+        </a>
+        <button class="icon-btn menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Menu"></button>
+        <nav class="site-nav" id="site-nav" aria-label="Main">
+          <a href="#tools">Tools</a>
+          <a href="#about">About</a>
+          <a href="#privacy">Privacy</a>
+          <button class="icon-btn" id="theme-toggle" type="button" aria-pressed="false" aria-label="Switch to dark theme"></button>
+        </nav>
+      </div>
+    </header>
+
+    <div class="warning-banner" id="browser-warning" role="alert" hidden></div>
+    <noscript><div class="warning-banner">DOCUMENT // LAB needs JavaScript to process files in your browser. Nothing is uploaded.</div></noscript>
+
+    <div id="top"></div>
+    <main id="main" tabindex="-1">
+      <!-- ───────────── HOME ───────────── -->
+      <div id="home">
+        <section class="hero" aria-labelledby="hero-title">
+          <div class="container hero-grid">
+            <div class="hero-copy">
+              <p class="eyebrow">LOCAL DOCUMENT TOOLS</p>
+              <h1 id="hero-title" class="hero-title">For the modern<br />workshop.</h1>
+              <p class="hero-lead"><strong>Convert. Merge. Split. Rotate.</strong><br />Your documents stay on your machine.</p>
+              <div class="hero-actions">
+                <a class="btn btn--primary btn--lg" href="#tools"><span class="btn-label">EXPLORE TOOLS</span></a>
+                <p class="hero-privacy"><span class="status-dot" aria-hidden="true"></span> Your files are processed locally in your browser whenever possible.</p>
+              </div>
+            </div>
+
+            <aside class="plate" aria-label="System status">
+              <p class="plate-title">SYSTEM STATUS</p>
+              <p class="plate-ready"><span class="status-dot" aria-hidden="true"></span> READY</p>
+              <p class="plate-sub">LOCAL PROCESSING ENABLED</p>
+              <dl class="plate-grid">
+                <div><dt>TOOLS</dt><dd id="tool-count">08</dd></div>
+                <div><dt>UPLOADS</dt><dd>0</dd></div>
+                <div><dt>ACCOUNT</dt><dd>NONE</dd></div>
+                <div><dt>ENGINE</dt><dd>BROWSER</dd></div>
+              </dl>
+              <p class="plate-foot">DOC-LAB · BUILD <span data-version>1.0.0</span></p>
+              <p class="plate-foot plate-maker">DESIGNED &amp; BUILT BY KENNENTH</p>
+            </aside>
+          </div>
+        </section>
+
+        <section class="section" id="tools" aria-labelledby="tools-title">
+          <div class="container">
+            <header class="section-head">
+              <p class="eyebrow">INDEX 01–08</p>
+              <h2 id="tools-title" class="section-title">Tools</h2>
+            </header>
+            <ul class="tool-grid" id="tool-grid"></ul>
+          </div>
+        </section>
+
+        <section class="section section--alt" id="how" aria-labelledby="how-title">
+          <div class="container">
+            <header class="section-head">
+              <p class="eyebrow">OPERATING PROCEDURE</p>
+              <h2 id="how-title" class="section-title">How it works</h2>
+            </header>
+            <ol class="steps">
+              <li><span class="step-num">01</span><h3>Load</h3><p>Drop files into a tool or pick them from your device.</p></li>
+              <li><span class="step-num">02</span><h3>Set</h3><p>Choose pages, order and options. Previews show what will happen.</p></li>
+              <li><span class="step-num">03</span><h3>Run</h3><p>Processing happens inside your browser tab, with live progress.</p></li>
+              <li><span class="step-num">04</span><h3>Download</h3><p>Save the result. Close the tab and everything is gone.</p></li>
+            </ol>
+          </div>
+        </section>
+
+        <section class="section" id="about" aria-labelledby="about-title">
+          <div class="container prose-grid">
+            <div>
+              <p class="eyebrow">ABOUT</p>
+              <h2 id="about-title" class="section-title">Simple tools. Local processing.</h2>
+            </div>
+            <div class="prose">
+              <p>DOCUMENT // LAB is a small collection of document utilities that run entirely as a static web page. There is no server behind it, so there is nothing to sign up for and nothing to wait in line for.</p>
+              <p>It is honest about its limits. Word → PDF is done by a built-in converter that approximates the layout rather than reproducing Word exactly, and the lossy compression modes say so before you use them.</p>
+              <p>Built with plain HTML, CSS and JavaScript, plus the open-source libraries pdf-lib, PDF.js and fflate. <a data-github-link href="https://github.com/YOUR_USERNAME/YOUR_REPOSITORY" rel="noopener">Source code</a>. Designed and built by <strong>Kennenth</strong>.</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="section section--dark" id="privacy" aria-labelledby="privacy-title">
+          <div class="container prose-grid">
+            <div>
+              <p class="eyebrow">PRIVACY</p>
+              <h2 id="privacy-title" class="section-title">Your files never leave your device.</h2>
+            </div>
+            <ul class="check-list">
+              <li>Files are opened and processed in your browser's memory.</li>
+              <li>No automatic uploads. Document contents are not sent to any service.</li>
+              <li>No account, no login, no analytics, no tracking scripts.</li>
+              <li>Nothing is stored permanently. The only thing saved on your device is your light/dark theme choice.</li>
+              <li>All code, fonts and libraries are served from this site, not from third-party CDNs.</li>
+            </ul>
+          </div>
+        </section>
+      </div>
+
+      <!-- ───────────── TOOL VIEW ───────────── -->
+      <div id="tool-view" hidden>
+        <div class="container">
+          <a class="back-link" href="#tools"><span aria-hidden="true">←</span> ALL TOOLS</a>
+          <div id="tool-mount"></div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <p class="footer-brand">DOCUMENT // LAB</p>
+          <p class="footer-tag">LOCAL-FIRST DOCUMENT UTILITIES</p>
+          <p class="footer-formats">PDF • DOCX • IMAGES</p>
+        </div>
+        <div>
+          <p>No account required.<br />No automatic uploads.</p>
+        </div>
+        <nav aria-label="Footer">
+          <a data-github-link href="https://github.com/YOUR_USERNAME/YOUR_REPOSITORY" rel="noopener">GitHub</a>
+          <a href="#privacy">Privacy</a>
+          <a href="#about">About</a>
+        </nav>
+      </div>
+      <div class="container footer-base"><span>v<span data-version>1.0.0</span></span><span>MIT LICENSE</span><span>MADE BY KENNENTH</span></div>
+    </footer>
+
+    <div class="made-by" aria-label="Made by Kennenth"><span class="made-by-dot" aria-hidden="true"></span>BUILT BY <strong>KENNENTH</strong></div>
+
+    <div class="toasts" id="toasts" aria-live="polite"></div>
+    <div class="sr-only" id="sr-status" role="status" aria-live="polite" aria-atomic="true"></div>
+  </body>
+</html>

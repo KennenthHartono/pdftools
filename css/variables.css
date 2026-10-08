@@ -1,0 +1,74 @@
+/* Design tokens. Light vintage theme is the default; dark is opt-in via the header toggle. */
+:root {
+  /* raw palette (from the brief) */
+  --cream: #f4ebdd;
+  --cream-light: #fbf6ec;
+  --orange: #d85a2a;
+  --orange-dark: #a63d1d;
+  --burnt-orange: #c84b24;
+  --black: #171513;
+  --dark-brown: #29211c;
+  --brown: #5a4030;
+  --paper: #efe1cc;
+  --border: #8b6a50;
+  --muted: #8b7a6a;
+  --success: #4d6b4a;
+  --danger: #a83c32;
+
+  /* semantic tokens */
+  --bg: var(--cream);
+  --bg-raised: var(--cream-light);
+  --bg-sunk: var(--paper);
+  --ink: var(--black);
+  --ink-soft: var(--brown);
+  --ink-faint: #6b5b4d; /* muted text that still passes 4.5:1 on cream */
+  --line: var(--border);
+  --line-soft: rgba(139, 106, 80, 0.35);
+  --accent: var(--burnt-orange);
+  --accent-text: var(--orange-dark);
+  --accent-contrast: #fff;
+  --ok: var(--success);
+  --bad: var(--danger);
+  --glow: rgba(216, 90, 42, 0.45);
+  --grid-line: rgba(90, 64, 48, 0.07);
+  --grain-opacity: 0.5;
+  --inverse-bg: var(--dark-brown);
+  --inverse-ink: var(--cream);
+  --shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset, 0 2px 0 rgba(23, 21, 19, 0.12);
+  --shadow-lift: 0 6px 0 -2px rgba(23, 21, 19, 0.16), 0 14px 24px -14px rgba(41, 33, 28, 0.45);
+
+  /* type */
+  --font-display: 'Archivo', 'Arial Narrow', 'Helvetica Neue', Arial, sans-serif;
+  --font-body: 'IBM Plex Sans', 'Helvetica Neue', Arial, system-ui, sans-serif;
+  --font-mono: 'IBM Plex Mono', ui-monospace, 'SFMono-Regular', Menlo, Consolas, monospace;
+
+  /* shape + rhythm */
+  --radius: 6px;
+  --radius-lg: 10px;
+  --container: 1180px;
+  --gutter: clamp(16px, 4vw, 32px);
+  --ease: cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+
+:root[data-theme='dark'] {
+  --bg: #1a1613;
+  --bg-raised: #241e19;
+  --bg-sunk: #120f0d;
+  --ink: #f1e7d6;
+  --ink-soft: #d3c2aa;
+  --ink-faint: #a89782;
+  --line: #7a6048;
+  --line-soft: rgba(168, 140, 110, 0.3);
+  --accent: #e0693a;
+  --accent-text: #f08a5f;
+  --accent-contrast: #1a1613;
+  --ok: #8fb58a;
+  --bad: #e5857a;
+  --glow: rgba(224, 105, 58, 0.5);
+  --grid-line: rgba(241, 231, 214, 0.05);
+  --grain-opacity: 0.18;
+  --inverse-bg: #0d0b0a;
+  --inverse-ink: #f1e7d6;
+  --shadow: 0 1px 0 rgba(255, 255, 255, 0.04) inset, 0 2px 0 rgba(0, 0, 0, 0.5);
+  --shadow-lift: 0 6px 0 -2px rgba(0, 0, 0, 0.5), 0 14px 24px -14px rgba(0, 0, 0, 0.8);
+}

@@ -1,0 +1,23 @@
+{
+  "name": "document-lab",
+  "version": "1.0.0",
+  "description": "Local-first PDF and DOCX utilities. Static, vanilla JS, no backend.",
+  "type": "module",
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "vendor": "node scripts/vendor.mjs",
+    "serve": "python3 -m http.server 8080",
+    "test:unit": "node --test tests/unit.mjs"
+  },
+  "dependencies": {
+    "fflate": "^0.8.3",
+    "pdf-lib": "^1.17.1",
+    "pdfjs-dist": "^6.4.299"
+  },
+  "devDependencies": {
+    "@fontsource-variable/archivo": "^5.3.0",
+    "@fontsource/ibm-plex-mono": "^5.3.0",
+    "@fontsource/ibm-plex-sans": "^5.3.0"
+  }
+}
